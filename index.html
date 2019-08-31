@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box{
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <script type="text/javascript">
+      var box = document.getElementById('box');
+//                 0       1        2
+      var arr = ['red','yellow','green'];
+      var i = 0;
+      setInterval(function () {
+          //1   2   3   4
+        i++;
+        box.style.background = arr[4%3];
+      },1000)
+    </script>
+</body>
+</html>
